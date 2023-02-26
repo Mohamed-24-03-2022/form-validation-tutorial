@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 100px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form div {
+  display: flex;
+  padding: 10px;
+}
+
+div label {
+  width: 180px;
+}
+
+form button {
+  align-self: flex-end;
+  padding: 5px;
+  width: 80px;
+}
+
+input {
+  padding: 5px;
+  border: solid 0px #333;
+  box-shadow: #00000081 2px 2px 2px 3px;
+}
+input:invalid {
+  box-shadow: #ff000033 2px 2px 2px 3px;
+}
+input:valid {
+  box-shadow: #00ff5533 2px 2px 2px 3px;
+}
+input:focus {
+  outline: none;
+}
